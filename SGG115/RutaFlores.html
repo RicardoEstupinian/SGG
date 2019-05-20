@@ -1,0 +1,126 @@
+<!-- MapServer Template -->
+<html>
+
+	<head>
+		<title>GIS Ruta de las Flores</title>
+		<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1">
+		<!--<link rel="stylesheet" href="ms4w/apps/SGG115/bootstrap/css/bootstrap.min.css">
+		<script src="jquery-3.4.1.min.js"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
+		integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
+		crossorigin="anonymous"></script>
+	<script src="bootstrap/js/bootstrap.min.js"></script>-->
+		<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+			integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+		<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
+			integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
+			crossorigin="anonymous"></script>
+		<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+			integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+			crossorigin="anonymous"></script>
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
+			integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
+			crossorigin="anonymous"></script>
+	</head>
+
+	<body bgcolor="#FFFFFF" text="#000000">
+		<table width="800" align="center">
+			<br>
+			<h3 align="center">RUTA DE LAS FLORES</h3>
+			<tr>
+				<td>
+
+					<!-- START OF MAPSERVER FORM -->
+					<form name="mapserv" method="GET" action="/cgi-bin/mapserv.exe">
+						<!-- HIDDEN MAPSERVER CGI VARIABLES -->
+						<input type="hidden" name="map" value="[map]">
+						<input type="hidden" name="imgext" value="[mapext]">
+						<input type="hidden" name="imgxy" value="[center]">
+						<input type="hidden" name="savequery" value="true">
+
+						<table width="600" border="0" align="center">
+							<tr>
+								<td>
+									<table class="table table-bordered" width="400" align="center">
+										<tr align="center">
+
+
+											<td colspan="4">
+												<p class="h6">Seleccione Capas:</p>
+												<!-- SPECIFY VECTOR LAYERS -->
+
+												<input type="checkbox" name="layer" value="departamentos"
+													[departamentos_check]>
+												Departamentos&nbsp;&nbsp;&nbsp;&nbsp;
+
+												<input type="checkbox" name="layer" value="municipiosRuta"
+													[municipiosRuta_check]>
+												Municipios Ruta de las Flores&nbsp;&nbsp;&nbsp;&nbsp;
+
+												<input type="checkbox" name="layer" value="municipios"
+													[municipios_check]>
+												Municipios&nbsp;&nbsp;&nbsp;&nbsp;
+											</td>
+
+										</tr>
+										<tr>
+											<td>
+
+												<!-- SPECIFY MAP MODE -->
+												<div align="center">
+													<p class="h6">Modo de Mapa</p>
+													<select name="mode" class="btn btn-danger">
+														<option value="browse" [browse_select]>Navegador</option>
+														<option value="map">Imagen de Mapa</option>
+														<option value="query" [query_select]>Consultar Capa</option>
+													</select>
+												</div>
+											</td>
+											<td>
+												<!-- FORM SUBMIT BUTTON -->
+												<div align="center">
+													<p class="h6" align="center">Refrescar</p>
+													<input class="btn btn-success" type="submit" name="submit"
+														value="   Aplicar   ">
+												</div>
+											</td>
+											<td>
+												<!-- ZOOM/PAN CONTROLS -->
+												<div align="center">
+													<p class="h6">Control de Zoom</p>
+													<select class="btn btn-info" name="zoom">
+														<option value="4" [zoom_4_select]>Zoom In 4x</option>
+														<option value="3" [zoom_3_select]>Zoom In 3x</option>
+														<option value="2" [zoom_2_select]>Zoom In 2x</option>
+														<option value="1" [zoom_1_select]>Desplazarse</option>
+														<option value="-2" [zoom_-2_select]>Zoom Out 2x</option>
+														<option value="-3" [zoom_-3_select]>Zoom Out 3x</option>
+														<option value="-4" [zoom_-4_select]>Zoom Out 4x</option>
+													</select>
+												</div>
+											</td>
+											<td rowspan="4" valign="top" align="center">
+												<p class="h6" align="center">Leyenda<br><img name="legend"
+														src="[legend]"></p>
+														<a href="http://127.0.0.1/cgi-bin/mapserv.exe?map=/ms4w/apps/SGG115/SGG.map&mode=browse">Reetablecer Zoom</a>
+											</td>
+								</td>
+							</tr>
+							<tr>
+								<!-- DISPLAY THE MAPSERVER-CREATED MAP IMAGE -->
+								<td colspan="3" align="center" valign="top">
+									<input type="image" name="img" src="[img]" width="850" height="500" border="0" />
+									<img src="[scalebar]">
+								</td>
+							</tr>
+						</table>
+				</td>
+			</tr>
+		</table>
+		</form>
+		</td>
+		</tr>
+		</table>
+	</body>
+
+</html>
