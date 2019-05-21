@@ -1,4 +1,4 @@
-﻿nom_lugar;nom_muni;direccion;x;y;tipo;Categoria
+﻿lugar;nom_muni;direccion;x;y;tipo;Categoria
 Chorros de la Caldera;JUAYUA;Calle Merceditas Cáceres Oriente y Calle a los Chorros de la Calera.;-89,7508555555555;13,8546028;Sitio Turistico;Sitio Natural
 Montaña KFE;JUAYUA;Km. 80 ½ Cantón los Naranjos;-89,6749444444444;13,8833583;Sitio Turistico;Sitio Natural
 Artesanias El progreso;NAHUIZALCO;Calle Principal Av. El Calvario. Nahuizalco;-89,7369722222222;13,7767222;Sitio Turistico;Artesanias
@@ -17,7 +17,7 @@ Laguna Verde;APANECA;Bosque Laguna de Las Ninfas, Calle a la Laguna Verde, -, De
 Laguna de las Ninfas;APANECA;Calle a la Laguna de las Ninfas, 2106 - Apaneca;-89,8054215;13,8789093;Sitio Turistico;Sitio Natural
 Laberinto de Albania de Apaneca;APANECA;Ruta de Las Flores, Apaneca, Departamento de Ahuachapán;-89,808558;13,859269;Sitio Turistico;Sitio Natural
 Cerro de Apaneca;APANECA;A Km de la ciudad central de Apaneca;-89,8073659;13,8414093;Sitio Turistico;Sitio Natural
-Cerro el Aguila;JUAYUA;A Km de la ciudad central de Juayua;-89,8425;13,7944444;Sitio Turistico;Sitio Natural
+Cerro el Aguila;JUAYUA;A Km de la ciudad central de Juayua;-89,69694;13,89167;Sitio Turistico;Sitio Natural
 Parque Central de Juayua;JUAYUA;Ruta A Los Naranjos, Juayua, Departamento de Sonsonate;-89,7478868;13,8428208;Sitio Turistico;Urbanizado
 Cerro las Ranas;JUAYUA; Cantones Tapacún y Ojo de Agua, en los municipios de Chalchuapa y Juayúa;-89,725965;13,9010518;Sitio Turistico;Sitio Natural
 Cerro los Naranjos;JUAYUA;7 kms al NE de la ciudad de Juayua y a 20 kms de la ciudad de Sonsonate, sobre la carretera CA 12;-89,7012179;13,8801377;Sitio Turistico;Sitio Natural
