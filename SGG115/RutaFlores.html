@@ -42,30 +42,7 @@
 							<tr>
 								<td>
 									<table class="table table-bordered" width="400" align="center">
-										<tr align="center">
-
-
-											<td colspan="4">
-												<p class="h6">Seleccione Capas:</p>
-												<!-- SPECIFY VECTOR LAYERS -->
-
-												<input type="checkbox" name="layer" value="departamentos"
-													[departamentos_check]>
-												Departamentos&nbsp;&nbsp;&nbsp;&nbsp;
-
-												<input type="checkbox" name="layer" value="municipiosRuta"
-													[municipiosRuta_check]>
-												Municipios Ruta de las Flores&nbsp;&nbsp;&nbsp;&nbsp;
-
-												<input type="checkbox" name="layer" value="municipios"
-													[municipios_check]>
-												Municipios&nbsp;&nbsp;&nbsp;&nbsp;
-												<input type="checkbox" name="layer" value="deptolinea"
-													[deptolinea_check]>
-												Departamentos Linea&nbsp;&nbsp;&nbsp;&nbsp;
-											</td>
-
-										</tr>
+										
 										<tr>
 											<td>
 
@@ -102,7 +79,26 @@
 													</select>
 												</div>
 											</td>
-											<td rowspan="4" valign="top" align="center">
+											<td rowspan="5" valign="top">
+													<p class="h6">Seleccione Capas:</p>
+													<!-- SPECIFY VECTOR LAYERS -->
+	
+													<input type="checkbox" name="layer" value="sitios"
+														[sitios_check]>
+													Puntos Sitios Turisticos<br>
+													<input type="checkbox" name="layer" value="municipiosRuta"
+														[municipiosRuta_check]>
+													Municipios Ruta de las Flores<br>
+													<input type="checkbox" name="layer" value="municipios"
+														[municipios_check]>
+													Municipios<br>
+													<input type="checkbox" name="layer" value="deptolinea"
+														[deptolinea_check]>
+													Limites Departamentos<br>
+													<input type="checkbox" name="layer" value="departamentos"
+														[departamentos_check]>
+													Departamentos<br><br><br>
+
 												<p class="h6" align="center">Leyenda<br><img name="legend"
 														src="[legend]"></p>
 														<a href="http://127.0.0.1/cgi-bin/mapserv.exe?map=/ms4w/apps/SGG115/SGG.map&mode=browse&layer=departamentos">Reetablecer Zoom</a>
