@@ -21,12 +21,13 @@
 		<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
 			integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
 			crossorigin="anonymous"></script>
+			
 	</head>
 
 	<body bgcolor="#FFFFFF" text="#000000">
 		<table width="800" align="center">
-			<br>
-			<h3 align="center">RUTA DE LAS FLORES</h3>
+			
+			<h2 align="center"><img src="https://rutadelasflores.com/wp-content/uploads/2018/10/Ruta-de-las-Flores-El-Salvador-2019.png" width="150" height="150">     RUTA DE LAS FLORES<img hidden="true" src="https://rutadelasflores.com/wp-content/uploads/2018/10/Ruta-de-las-Flores-El-Salvador-2019.png" width="150" height="150"></h2>
 			<tr>
 				<td>
 
@@ -60,8 +61,7 @@
 												<!-- FORM SUBMIT BUTTON -->
 												<div align="center">
 													<p class="h6" align="center">Refrescar</p>
-													<input class="btn btn-success" type="submit" name="submit"
-														value="   Aplicar   ">
+													<input class="btn btn-success" type="submit" name="submit" value="   Aplicar   ">
 												</div>
 											</td>
 											<td>
@@ -82,22 +82,31 @@
 											<td rowspan="5" valign="top">
 													<p class="h6">Seleccione Capas:</p>
 													<!-- SPECIFY VECTOR LAYERS -->
-	
+													<input type="checkbox" name="layer" value="restaurantes"
+														[restaurantes_check]> Restaurantes<br>
+													<input type="checkbox" name="layer" value="hoteles"
+														[hoteles_check]> Hoteles<br>
 													<input type="checkbox" name="layer" value="sitios"
 														[sitios_check]>
 													Puntos Sitios Turisticos<br>
+													<input type="checkbox" name="layer" value="rutanahuzalcojuayua"
+														[rutanahuzalcojuayua_check]>
+													Ruta Nahuizalco a Juayua<br>
+													<input type="checkbox" name="layer" value="rutaatacojuayua"
+														[rutaatacojuayua_check]>
+													Ruta Ataco a Juayua<br>
+													<input type="checkbox" name="layer" value="concentracionHotel"
+														[concentracionHotel_check]> Concentracion Hoteles<br>
+														<input type="checkbox" name="layer" value="concentracionRes"
+														[concentracionRes_check]> Concentracion de Restaurantes<br>
 													<input type="checkbox" name="layer" value="municipiosRuta"
 														[municipiosRuta_check]>
 													Municipios Ruta de las Flores<br>
-													<input type="checkbox" name="layer" value="municipios"
-														[municipios_check]>
-													Municipios<br>
-													<input type="checkbox" name="layer" value="deptolinea"
-														[deptolinea_check]>
-													Limites Departamentos<br>
+													
 													<input type="checkbox" name="layer" value="departamentos"
 														[departamentos_check]>
-													Departamentos<br><br><br>
+													Departamentos<br>
+													<br><br>
 
 												<p class="h6" align="center">Leyenda<br><img name="legend"
 														src="[legend]"></p>
